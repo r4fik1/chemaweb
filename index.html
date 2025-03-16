@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chema Martín</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="/images/logo_icon.png">
+	</head>
+
+	<!-- EmailJS -->
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script>
+	  document.addEventListener("DOMContentLoaded", function () {
+		emailjs.init("LaStg3-uehMh1-AHr"); // Reemplaza con tu User ID de EmailJS
+	  });
+	
+	  function enviarCorreo(event) {
+		event.preventDefault(); // Evita que la página se recargue
+	
+		emailjs.sendForm("service_nf2e86j", "template_ae8jyas", event.target)
+		  .then(() => {
+			alert("Mensaje enviado con éxito!");
+			event.target.reset(); // Limpia el formulario después de enviarlo
+		  }, (error) => {
+			alert("Error al enviar el mensaje: " + error.text);
+		  });
+		// Enviar email con los detalles del contacto a tu correo personal
+		emailjs.sendForm("service_nf2e86j", "template_zmq909a", event.target)
+		  .then(() => {
+			console.log("Notificación enviada a markitos1989@gmail.com.");
+		}, (error) => {
+			console.error("Error al enviar la notificación: ", error.text);
+		});
+
+	  }
+	</script>
+	
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>Chema Martín <span style="font-size: 16px; font-weight: bold; margin-left: 10px;">
+				📞 <a href="tel:+34629777043" style="color: inherit; text-decoration: none; font-weight: bold;">+34 629 777 043</a>
+			</span></h1>
+			<nav>
+				<ul>
+					<li><a href="#intro">Introducción</a></li>
+					<li><a href="#one">Qué Hago</a></li>
+					<li><a href="#two">Quién Soy</a></li>
+					<li><a href="#work">Mi Trabajo</a></li>
+					<li><a href="#contact">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+
+		<!-- Intro -->
+		<section id="intro" class="main style1 dark fullscreen">
+			<div class="content">
+				<header>
+					<!-- Logo -->
+					<img src="images/logo.png" alt="Chema Martín Logo" style="max-width: 150px; margin-bottom: 10px;">
+					<h2>Chema Martín</h2>
+				</header>
+				<p>Bienvenidos al universo de <strong>Chema Martín</strong>. Esta galería virtual muestra su obra en óleo, pastel y bolígrafo, capturando la emoción y 
+				el detalle en cada trazo. Explora su arte y disfruta de este viaje visual.</p>
+				<footer>
+					<a href="#one" class="button style2 down">More</a>
+				</footer>
+			</div>
+		</section>
+
+
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Qué Hago</h2>
+					</header>
+					<p>Artista versátil que captura la esencia de cada sujeto con maestría. 
+					Su obra abarca retratos, bodegones, paisajes y animales, utilizando óleo, pastel y bolígrafo para dar vida a cada detalle. 
+					A través de la luz, el color y la emoción, crea piezas que conectan con el espectador y evolucionan constantemente.</p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Quién Soy</h2>
+					</header>
+					<p>Con varias décadas de trayectoria, dedicado a perfeccionar su arte. 
+					Su pasión por la pintura lo ha llevado a explorar diversas técnicas y temáticas, siempre buscando evolucionar y superar sus propios límites.</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Mi Trabajo</h2>
+						<p>Aquí podrás visualizar y apreciar la obra de Chema Martín, un recorrido por sus distintas creaciones. 
+						Cada pieza refleja su pasión, técnica y evolución artística, invitándote a descubrir su universo pictórico.</p>
+					</header>
+
+					<!-- Gallery  -->
+						<div class="gallery">
+							<article class="from-left">
+								<a href="images/fulls/01.jpeg" class="image fit"><img src="images/thumbs/01.jpeg" title="The Anonymous Red" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/02.jpeg" class="image fit"><img src="images/thumbs/02.jpeg" title="Airchitecture II" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/03.jpeg" class="image fit"><img src="images/thumbs/03.jpeg" title="On a Beach" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/04.jpeg" class="image fit"><img src="images/thumbs/04.jpeg" title="The Fourth Space" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/05.jpeg" class="image fit"><img src="images/thumbs/05.jpeg" title="Fallen Grace" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/06.jpeg" class="image fit"><img src="images/thumbs/06.jpeg" title="Bloom" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/07.jpeg" class="image fit"><img src="images/thumbs/07.jpeg" title="The Darkened Sky" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/08.jpeg" class="image fit"><img src="images/thumbs/08.jpeg" title="Distant Mountains" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/09.jpeg" class="image fit"><img src="images/thumbs/09.jpeg" title="Sea Breeze" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/10.jpeg" class="image fit"><img src="images/thumbs/10.jpeg" title="Golden Hour" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/11.jpeg" class="image fit"><img src="images/thumbs/11.jpeg" title="Sunset Glow" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/12.jpeg" class="image fit"><img src="images/thumbs/12.jpeg" title="Urban Jungle" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/13.jpeg" class="image fit"><img src="images/thumbs/13.jpeg" title="The Green Valley" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/14.jpeg" class="image fit"><img src="images/thumbs/14.jpeg" title="Misty Forest" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/15.jpeg" class="image fit"><img src="images/thumbs/15.jpeg" title="Waves of Time" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/16.jpeg" class="image fit"><img src="images/thumbs/16.jpeg" title="City Lights" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/17.jpeg" class="image fit"><img src="images/thumbs/17.jpeg" title="Desert Mirage" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/18.jpeg" class="image fit"><img src="images/thumbs/18.jpeg" title="Winter Chill" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/19.jpeg" class="image fit"><img src="images/thumbs/19.jpeg" title="Starry Night" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/20.jpeg" class="image fit"><img src="images/thumbs/20.jpeg" title="Echoes of Silence" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/21.jpeg" class="image fit"><img src="images/thumbs/21.jpeg" title="Frozen Lake" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/22.jpeg" class="image fit"><img src="images/thumbs/22.jpeg" title="Red Horizon" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/23.jpeg" class="image fit"><img src="images/thumbs/23.jpeg" title="The Quiet Path" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/24.jpeg" class="image fit"><img src="images/thumbs/24.jpeg" title="Fading Memories" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/25.jpeg" class="image fit"><img src="images/thumbs/25.jpeg" title="Crystal Waters" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/26.jpeg" class="image fit"><img src="images/thumbs/26.jpeg" title="Shadows & Light" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/27.jpeg" class="image fit"><img src="images/thumbs/27.jpeg" title="Whispering Wind" alt="" /></a>
+							</article>							
+						</div>
+
+				</div>
+			</section>
+
+		<!-- Contact -->
+		<section id="contact" class="main style3 secondary">
+			<div class="content">
+				<header>
+					<h2>Contacto</h2>
+					<p>Si deseas conocer más sobre la obra de Chema Martín, realizar una consulta o encargar una pieza, no dudes en ponerte en contacto. 
+					¡Estaré encantado de atenderte!</p>
+				</header>
+				<div class="box">
+					<form onsubmit="enviarCorreo(event)">
+						<div class="fields">
+							<div class="field half"><input type="text" name="name" placeholder="Nombre" required /></div>
+							<div class="field half"><input type="email" name="email" placeholder="Correo Electrónico" required /></div>
+							<div class="field"><textarea name="message" placeholder="Mensaje" rows="6" required></textarea></div>
+						</div>
+						<ul class="actions special">
+							<li><input type="submit" value="Enviar Mensaje" /></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Footer -->
+		<footer id="footer">
+
+			<!-- Icons -->
+			<ul class="icons">
+				<li>
+					<a href="mailto:markitos1989@gmail.com" class="icon solid fa-envelope">
+						<span class="label">Email</span>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+34629777043" class="icon solid fa-phone">
+						<span class="label">Teléfono</span>
+					</a>
+				</li>
+			</ul>
+
+			<!-- Menu -->
+			<ul class="menu">
+				<li>&copy; 2024</li>
+				<li>Chema Martín</li>
+				<li>📞 <a href="tel:+34629777043">+34629777043</a></li>
+			</ul>
+
+		</footer>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
