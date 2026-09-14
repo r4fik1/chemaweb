@@ -19,15 +19,19 @@
 }
 
 .tiles article > .image:before {
-	opacity: 0.18 !important;
+	opacity: 0 !important;
 }
 
 .tiles article > .image:after {
 	display: none;
 }
 
+.tiles article > a h2 {
+	display: none;
+}
+
 body:not(.is-touch) .tiles article:hover > .image:before {
-	opacity: 0.45 !important;
+	opacity: 0.12 !important;
 }
 
 .obra-frame {

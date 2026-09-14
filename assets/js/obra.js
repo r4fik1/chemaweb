@@ -8,14 +8,20 @@
 	var obra = obras[index];
 	var prev = obras[index - 1];
 	var next = obras[index + 1];
-	var titulo = obra.titulo || 'Obra';
+	var titulo = obra.titulo || '';
+	var heading = document.getElementById('obra-titulo');
 
-	document.title = titulo + ' · Chema Martín';
-	document.getElementById('obra-titulo').textContent = titulo;
+	if (titulo) {
+		document.title = titulo + ' · Chema Martín';
+		heading.textContent = titulo;
+	} else {
+		document.title = 'Chema Martín';
+		heading.style.display = 'none';
+	}
 
 	var img = document.getElementById('obra-imagen');
 	img.src = obra.imagen;
-	img.alt = titulo;
+	img.alt = titulo || 'Cuadro de Chema Martín';
 
 	var texto = document.getElementById('obra-texto');
 	if (obra.texto) {
