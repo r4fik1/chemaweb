@@ -2,7 +2,7 @@
 	var root = document.getElementById('main');
 	if (!root || !window.OBRAS) return;
 
-	root.innerHTML = window.OBRAS.map(function (obra) {
+	root.innerHTML = window.OBRAS.slice().reverse().map(function (obra) {
 		var alt = obra.titulo || 'Cuadro de Chema Martín';
 		var caption = '';
 		if (obra.titulo) caption += '<h2>' + obra.titulo + '</h2>';
