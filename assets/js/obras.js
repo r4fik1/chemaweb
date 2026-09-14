@@ -22,7 +22,6 @@ window.OBRAS = [
   { id: "021", titulo: "", texto: "", thumb: "images/thumbs/021.jpg", imagen: "images/fulls/021.jpg" },
   { id: "022", titulo: "", texto: "", thumb: "images/thumbs/022.jpg", imagen: "images/fulls/022.jpg" },
   { id: "023", titulo: "", texto: "", thumb: "images/thumbs/023.jpg", imagen: "images/fulls/023.jpg" },
-  { id: "024", titulo: "", texto: "", thumb: "images/thumbs/024.jpg", imagen: "images/fulls/024.jpg" },
   { id: "025", titulo: "", texto: "", thumb: "images/thumbs/025.jpg", imagen: "images/fulls/025.jpg" },
   { id: "026", titulo: "", texto: "", thumb: "images/thumbs/026.jpg", imagen: "images/fulls/026.jpg" },
   { id: "027", titulo: "", texto: "", thumb: "images/thumbs/027.jpg", imagen: "images/fulls/027.jpg" },
