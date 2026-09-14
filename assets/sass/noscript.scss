@@ -3,21 +3,38 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import 'libs/html-grid';
 
 /*
-	Phantom by HTML5 UP
+	Multiverse by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Tiles */
+/* Wrapper */
 
-	.tiles {
+	#wrapper {
 		body.is-preload & {
-			article {
-				@include vendor('transform', 'none');
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+/* Main */
+
+	#main {
+		body.is-preload & {
+			.thumb {
+				@include vendor('pointer-events', 'auto');
 				opacity: 1;
 			}
+		}
+	}
+
+/* Header */
+
+	#header {
+		body.is-preload & {
+			@include vendor('transform', 'none');
 		}
 	}

@@ -1,22 +1,18 @@
 (function () {
-	var root = document.getElementById('galeria');
+	var root = document.getElementById('main');
 	if (!root || !window.OBRAS) return;
 
-	var styles = ['style1', 'style2', 'style3', 'style4', 'style5', 'style6'];
-
-	root.innerHTML = window.OBRAS.map(function (obra, i) {
+	root.innerHTML = window.OBRAS.map(function (obra) {
 		var alt = obra.titulo || 'Cuadro de Chema Martín';
-		var titulo = obra.titulo || '';
-		var texto = obra.texto || '';
+		var caption = '';
+		if (obra.titulo) caption += '<h2>' + obra.titulo + '</h2>';
+		if (obra.texto) caption += '<p>' + obra.texto + '</p>';
 		return (
-			'<article class="' + styles[i % styles.length] + '">' +
-				'<span class="image">' +
+			'<article class="thumb">' +
+				'<a href="' + obra.imagen + '" class="image">' +
 					'<img src="' + obra.thumb + '" alt="' + alt + '" />' +
-				'</span>' +
-				'<a href="obra.html?id=' + encodeURIComponent(obra.id) + '">' +
-					(titulo ? '<h2>' + titulo + '</h2>' : '') +
-					(texto ? '<div class="content"><p>' + texto + '</p></div>' : '') +
 				'</a>' +
+				caption +
 			'</article>'
 		);
 	}).join('');

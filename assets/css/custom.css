@@ -1,63 +1,17 @@
-/* Ajustes sobre Phantom para que se vean los cuadros */
+#header h1 a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6em;
+}
 
-#header .logo .symbol img {
-	width: 2.75em;
-	height: 2.75em;
+#header h1 img {
+	width: 1.85em;
+	height: 1.85em;
 	object-fit: contain;
 	border-radius: 4px;
 }
 
-.tiles article > .image {
-	background: #ececec;
-}
-
-.tiles article > .image img {
-	aspect-ratio: 1 / 1;
-	object-fit: contain;
-	width: 100%;
-	background: #ececec;
-}
-
-.tiles article > .image:before {
-	opacity: 0 !important;
-}
-
-.tiles article > .image:after {
-	display: none;
-}
-
-.tiles article > a h2 {
-	display: none;
-}
-
-body:not(.is-touch) .tiles article:hover > .image:before {
-	opacity: 0.12 !important;
-}
-
-.obra-frame {
-	background: #ececec;
-	text-align: center;
-	margin: 0 0 2em 0;
-}
-
-.obra-frame img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-}
-
-.obra-nav {
-	display: flex;
-	justify-content: space-between;
-	gap: 1em;
-	margin-top: 2em;
-}
-
-.obra-meta {
-	color: #585858;
-}
-
 #contacto-estado {
-	margin-top: 1em;
-	min-height: 1.5em;
+	margin-top: 0.75em;
+	min-height: 1.25em;
 }
