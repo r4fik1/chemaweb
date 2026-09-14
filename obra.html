@@ -6,10 +6,9 @@
 -->
 <html lang="es">
 	<head>
-		<title>Chema Martín · Artista</title>
+		<title>Obra · Chema Martín</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Obra de Chema Martín. Pintura en óleo, pastel y bolígrafo: retratos, bodegones, paisajes y animales." />
 		<link rel="icon" type="image/png" href="images/logo_icon.png" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
@@ -43,36 +42,23 @@
 
 			<div id="main">
 				<div class="inner">
-					<header>
-						<h1>Chema Martín</h1>
-						<p>Artista. Óleo, pastel y bolígrafo. Retratos, bodegones, paisajes y animales. Esta galería reúne su obra: cada cuadro, un trazo y una mirada.</p>
-					</header>
-					<section class="tiles" id="galeria"></section>
+					<h1 id="obra-titulo">Obra</h1>
+					<div class="obra-frame">
+						<img id="obra-imagen" src="" alt="" />
+					</div>
+					<p id="obra-texto" class="obra-meta"></p>
+					<div class="obra-nav" id="obra-nav"></div>
+					<ul class="actions" style="margin-top: 2em;">
+						<li><a href="index.html" class="button">Volver a la galería</a></li>
+					</ul>
 				</div>
 			</div>
 
 			<footer id="footer">
 				<div class="inner">
-					<section id="contacto">
+					<section>
 						<h2>Contacto</h2>
-						<p>Para consultas o encargos, escribe o llama. Estaré encantado de atenderte.</p>
-						<form id="form-contacto">
-							<div class="fields">
-								<div class="field half">
-									<input type="text" name="name" id="name" placeholder="Nombre" required />
-								</div>
-								<div class="field half">
-									<input type="email" name="email" id="email" placeholder="Correo" required />
-								</div>
-								<div class="field">
-									<textarea name="message" id="message" placeholder="Mensaje" required></textarea>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Enviar" class="primary" /></li>
-							</ul>
-							<p id="contacto-estado"></p>
-						</form>
+						<p><a href="tel:+34629777043">+34 629 777 043</a> · <a href="mailto:markitos1989@gmail.com">markitos1989@gmail.com</a></p>
 					</section>
 					<section>
 						<h2>También</h2>
@@ -80,7 +66,6 @@
 							<li><a href="tel:+34629777043" class="icon solid style2 fa-phone"><span class="label">Teléfono</span></a></li>
 							<li><a href="mailto:markitos1989@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-						<p><a href="tel:+34629777043">+34 629 777 043</a></p>
 					</section>
 					<ul class="copyright">
 						<li>&copy; Chema Martín</li>
@@ -97,8 +82,6 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/obras.js"></script>
-		<script src="assets/js/galeria.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-		<script src="assets/js/contacto.js"></script>
+		<script src="assets/js/obra.js"></script>
 	</body>
 </html>
