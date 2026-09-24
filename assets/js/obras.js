@@ -156,5 +156,6 @@ window.OBRAS = [
   { id: "157", titulo: "", texto: "", thumb: "images/thumbs/157.jpg", imagen: "images/fulls/157.jpg" },
   { id: "158", titulo: "", texto: "", thumb: "images/thumbs/158.jpg", imagen: "images/fulls/158.jpg" },
   { id: "159", titulo: "", texto: "", thumb: "images/thumbs/159.jpg", imagen: "images/fulls/159.jpg" },
-  { id: "160", titulo: "", texto: "", thumb: "images/thumbs/160.jpg", imagen: "images/fulls/160.jpg" }
+  { id: "160", titulo: "", texto: "", thumb: "images/thumbs/160.jpg", imagen: "images/fulls/160.jpg" },
+  { id: "161", titulo: "", texto: "", thumb: "images/thumbs/161.jpg", imagen: "images/fulls/161.jpg" }
 ];
